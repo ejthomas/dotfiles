@@ -3,6 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 if [[ -f $ZSH/oh-my-zsh.sh ]]; then
     plugins=(git zsh-autosuggestions)
     source $ZSH/oh-my-zsh.sh
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 fi
 
 
