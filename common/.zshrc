@@ -1,7 +1,8 @@
 # Configure oh-my-zsh if installed
 export ZSH="$HOME/.oh-my-zsh"
-if [[ ! -f $ZSH/oh-my-zsh.sh ]]; then
+if [[ -f $ZSH/oh-my-zsh.sh ]]; then
     plugins=(git zsh-autosuggestions)
+    source $ZSH/oh-my-zsh.sh
 fi
 
 
