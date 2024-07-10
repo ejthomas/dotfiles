@@ -31,7 +31,9 @@ call plug#begin()
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+if v:version >= 900
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+endif
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
