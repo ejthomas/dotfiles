@@ -18,10 +18,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Install oh-my-zsh extensions
 git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# Source dotfiles
-# DIR=$(dirname $(readlink -f "$0"))
-# echo "source $DIR/common/.zshrc" >> $HOME/.zshrc
-# echo "source $DIR/common/.vimrc" >> $HOME/.vimrc
+# Install Git LFS
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt install -y git-lfs
+git lfs install
 
 # Replace existing dotfiles
 
